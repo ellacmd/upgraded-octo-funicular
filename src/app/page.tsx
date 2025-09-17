@@ -168,12 +168,13 @@ export default function Home() {
                         src={getLikeButtonIcon()}
                         width={40}
                         height={40}
+                        draggable="false"
                     />
                 </button>
 
                 <div
                     ref={reactionsRef}
-                    className='absolute top-0 left-35 -translate-x-1/2 -translate-y-full flex gap-2 bg-white shadow-xl rounded-full p-3 opacity-0 invisible transition-opacity duration-300 group-hover:opacity-100 group-hover:visible w-max justify-between'>
+                    className='absolute top-0 md:left-35 -translate-x-1/2 -translate-y-full flex gap-2 bg-white shadow-xl rounded-full p-3 opacity-0 invisible transition-opacity duration-300 group-hover:opacity-100 group-hover:visible w-max justify-between'>
                     {[
                         { type: 'liked', icon: liked, label: 'Like' },
                         {
