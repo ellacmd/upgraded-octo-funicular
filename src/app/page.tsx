@@ -168,7 +168,8 @@ export default function Home() {
                         src={getLikeButtonIcon()}
                         width={40}
                         height={40}
-                        draggable="false"
+                        onContextMenu={(e) => e.preventDefault()}
+                        onDragStart={(e) => e.preventDefault()}
                     />
                 </button>
 
